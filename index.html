@@ -254,7 +254,7 @@
           In this <a href="https://robotics.farama.org/envs/maze/point_maze/"> PointMaze task</a>, the mobile robot must navigate to its goal in a maze while not colliding with walls.
         </p>
         <p>
-          We report the key metric, <b>Safe Success Rate</b>—the percentage of successful episodes with no safety violations.
+          We report the key metric, <b>Safe Success Rate</b>—the percentage of successful episodes with no safety violations, out of 100 experiments.
           RAIL significantly increases safe success rate by combining long-horizon reasoning capability and safety guarantee respectively from diffusion policy and reachability analysis.
         </p>
       </div>
@@ -342,9 +342,11 @@
       Safety means avoiding collisions between the robot and the environment while obeying joint position and velocity constraints. 
       The gripper-can collision is ignored during picking, but collisions between the can and the environment are considered unsafe during placing.
     </p>
+    
+    RAIL increases Safe Success Rate by <b>9.25%</b> over Diffusion Policy and <b>2.00%</b> over Action Chunking Transformer, by finding safe, successful IL policy modes.
 
     <div class="item item-fullbody">
-      <video poster="" id="fullbody" autoplay controls muted loop playsinline>
+      <video poster="" id="fullbody" autoplay controls muted loop playsinline width = "50%" height = "50%" style="display: block; margin: auto; ; margin-bottom: 20px;">
         <source src="./static/videos/franka_sim_comp.mp4"
                 type="video/mp4">
       </video>
