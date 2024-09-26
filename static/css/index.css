@@ -23,6 +23,11 @@ body {
   padding-bottom: 3rem;
 }
 
+.teaser-video{
+  width: 50% ;
+  height: auto;
+}
+
 .teaser {
   font-family: 'Google Sans', sans-serif;
 }
