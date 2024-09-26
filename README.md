@@ -4,10 +4,10 @@ This is the repository that contains source code for the [RAIL website](https://
 
 If you find RAIL useful for your work, please cite:
 ```
-@article{park2021nerfies
+@article{jung2024rail
   author    = {Jung, Wonsuhk and Anthony, Dennis and Mishra, Utkarsh and Arachchige, Nadun and Bronars, Matthew, and Xu, Danfei and Kousik, Shreyas},
   title     = {RAIL: Reachability-Aided Imitation Learning for Safe Policy Execution,
-  journal   = {a},
+  journal   = {arxiv},
   year      = {2024},
 }
 ```
