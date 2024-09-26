@@ -381,38 +381,79 @@
   <div class="hero-body">
     <div class="container">
       <div class="content mb-5">
-        <h2 class="title is-4 has-text-centered">Maze 2D: RAIL combines long-horizon reasoning ability and safety guarantee</h2>
-        <p>The ball has to reach the goal without hitting walls. </p>
+        <h2 class="title is-3 has-text-centered"> Safe Long-horizon Reasoning</h2>
+        <p>          
+          In this task, the mobile robot must navigate to its goal while avoiding walls.
+          RAIL combines long-horizon reasoning capability and safety guarantee respectively from diffusion policy and reachability analysis.
+        </p>
       </div>
+      <!-- Insert table here -->
+      <table class="table is-fullwidth is-striped">
+        <thead>
+          <tr>
+            <th>Method</th>
+            <th>Success Rate</th>
+            <th>Safety Rate</th>
+            <th>Success and Safe Rate</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Diffusion Policy</td>
+            <td>85%</td>
+            <td>90%</td>
+            <td>75%</td>
+          </tr>
+          <tr>
+            <td>RAIL</td>
+            <td>95%</td>
+            <td>98%</td>
+            <td>93%</td>
+          </tr>
+          <tr>
+            <td>Baseline</td>
+            <td>70%</td>
+            <td>80%</td>
+            <td>60%</td>
+          </tr>
+        </tbody>
+      </table>
       <!-- <div class="maze-image-container has-text-centered">
         <img src="static/images/maze_table.png" alt="Maze 2D Comparison" class="maze-comparison-image">
       </div> -->
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item">
           <div class="item-content">
-            <video poster="" id="steve" autoplay controls muted loop playsinline width = "70%" height="70%">
+            <video poster="" id="steve" autoplay controls muted loop playsinline>
               <source src="./static/videos/maze2D_large_sf.mp4" type="video/mp4">
             </video>
           </div>
         </div>
         <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline width = "70%" height="70%">
+          <video poster="" id="chair-tp" autoplay controls muted loop playsinline>
             <source src="./static/videos/maze2D_large_diff.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline width = "70%" height="70%">
+          <video poster="" id="shiba" autoplay controls muted loop playsinline>
             <source src="./static/videos/maze2D_large_sd.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline width = "70%" height="70%">
+          <video poster="" id="fullbody" autoplay controls muted loop playsinline>
             <source src="./static/videos/maze2D_large_back.mp4"
                     type="video/mp4">
           </video>
         </div>
+      </div>
+      <div class="content mb-5">
+        <p>          
+          If the robot collides with a wall, the screen flashes in <i style = "color:red"> red </i>.
+          For Diffusion Policy + RAIL, a <i style = "color:greenyellow"> green circle </i> appears when safety intervention happens
+          and <i style = "color: blue"> blue circle </i> when it operates without interventon.
+        </p>
       </div>
     </div>
   </div>
