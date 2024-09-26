@@ -396,9 +396,19 @@
 
     <div class="item item-fullbody">
       <video poster="" id="fullbody" autoplay controls muted loop playsinline width = "50%" height = "50%" style="display: block; margin: auto; ; margin-bottom: 20px;">
-        <source src="./static/videos/franka_sim_compare.mp4"
+        <source src="./static/videos/franka_sim_cmp.mp4"
                 type="video/mp4">
       </video>
+    </div>
+
+    <div class="content mb-5">
+      <p>
+        <i>
+        If the robot collides with a wall, the screen flashes in <b style = "color:red">red</b>.
+        For <b>Diffusion Policy + RAIL</b>, a <b style = "color:rgb(90, 135, 21)">green circle</b> appears when safety intervention happens
+        and <b style = "color: blue">blue circle</b> when it operates without interventon.
+        </i>
+      </p>
     </div>
 
     <!--/ Matting. -->
