@@ -392,29 +392,35 @@
         <thead>
           <tr>
             <th>Method</th>
-            <th>Success Rate</th>
-            <th>Safety Rate</th>
             <th>Success and Safe Rate</th>
+            <th>Success Rate</th>
+            <th>Collision Rate</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>Diffusion Policy</td>
-            <td>85%</td>
-            <td>90%</td>
-            <td>75%</td>
+            <td>15.00%</td>
+            <td>100.00%</td>
+            <td>5.66%</td>
           </tr>
           <tr>
-            <td>RAIL</td>
-            <td>95%</td>
-            <td>98%</td>
-            <td>93%</td>
+            <td>Safety-guided Diffusion Policy</td>
+            <td>18.00%</td>
+            <td>100.00%</td>
+            <td>4.85%</td>
           </tr>
           <tr>
-            <td>Baseline</td>
-            <td>70%</td>
-            <td>80%</td>
-            <td>60%</td>
+            <td>Model-based Planner</td>
+            <td>49.00%</td>
+            <td>49.00%</td>
+            <td>0.00%</td>
+          </tr>
+          <tr>
+            <td><b>Diffusion Policy + RAIL</b></td>
+            <td>95.00%</td>
+            <td>95.00%</td>
+            <td>0.00%</td>
           </tr>
         </tbody>
       </table>
@@ -450,9 +456,9 @@
       </div>
       <div class="content mb-5">
         <p>          
-          If the robot collides with a wall, the screen flashes in <i style = "color:red"> red </i>.
-          For Diffusion Policy + RAIL, a <i style = "color:greenyellow"> green circle </i> appears when safety intervention happens
-          and <i style = "color: blue"> blue circle </i> when it operates without interventon.
+          If the robot collides with a wall, the screen flashes in <b style = "color:red"> red </b>.
+          For Diffusion Policy + RAIL, a <b style = "color:rgb(90, 135, 21)"> green circle </b> appears when safety intervention happens
+          and <b style = "color: blue"> blue circle </b> when it operates without interventon.
         </p>
       </div>
     </div>
