@@ -243,9 +243,99 @@
   </div>
 </section>
 
+<!-- Maze Example -->
+<!-- Placeholder for maze video carousel -->
+<!-- Fun Idea: can user select initial position, goal? -->
+<section class="section is-light is-small">
+    <div class="container is-max-desktop">
+      <div class="content mb-5">
+        <h2 class="title is-3 has-text-centered"> (1) RAIL can safely reason in long-horizon</h2>
+        <p>          
+          In this <a href="https://robotics.farama.org/envs/maze/point_maze/"> PointMaze task</a>, the mobile robot must navigate to its goal in a maze while not colliding with walls.
+          We report the key metric, <b>Safe Success Rate</b>—the percentage of successful episodes with no safety violations.
+        </p>
+        <p>
+          RAIL significantly increases safe success rate by combining long-horizon reasoning capability and safety guarantee respectively from diffusion policy and reachability analysis.
+        </p>
+      </div>
+      <!-- Insert table here -->
+      <table class="table is-fullwidth is-striped">
+        <thead>
+          <tr>
+            <th>Method</th>
+            <th>Safe Success Rate</th>
+            <th>Success Rate</th>
+            <th>Collision Rate</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Diffusion Policy</td>
+            <td>15.00%</td>
+            <td><b>100.00%</b></td>
+            <td>5.66%</td>
+          </tr>
+          <tr>
+            <td>Safety-guided Diffusion Policy</td>
+            <td>18.00%</td>
+            <td><b>100.00%</b></td>
+            <td>4.85%</td>
+          </tr>
+          <tr>
+            <td>Model-based Planner</td>
+            <td>49.00%</td>
+            <td>49.00%</td>
+            <td><b>0.00%</b></td>
+          </tr>
+          <tr>
+            <td><b>Diffusion Policy + RAIL (Ours)</b></td>
+            <td><b>95.00%</b></td>
+            <td>95.00%</td>
+            <td><b>0.00%</b></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <div class="item-content">
+            <video poster="" id="steve" autoplay controls muted loop playsinline>
+              <source src="./static/videos/maze2D_large_sf.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay controls muted loop playsinline>
+            <source src="./static/videos/maze2D_large_diff.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-shiba">
+          <video poster="" id="shiba" autoplay controls muted loop playsinline>
+            <source src="./static/videos/maze2D_large_sd.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-fullbody">
+          <video poster="" id="fullbody" autoplay controls muted loop playsinline>
+            <source src="./static/videos/maze2D_large_back.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="content mb-5">
+        <p>          
+          Figure.
+          If the robot collides with a wall, the screen flashes in <b style = "color:red">red</b>.
+          For Diffusion Policy + RAIL, a <b style = "color:rgb(90, 135, 21)">green circle</b> appears when safety intervention happens
+          and <b style = "color: blue">blue circle</b> when it operates without interventon.
+        </p>
+      </div>
+    </div>
+</section>
 
 <section class="section">
-  <!-- <div class="container is-max-desktop">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 is-centered">2. RAIL discovers safe successful mode of Imitation Learning policy</h2>
 
     <div class="columns is-centered">
 
@@ -279,7 +369,7 @@
 
         </div>
       </div>
-    </div> -->
+    </div>
 
 
     <!--/ Matting. -->
@@ -287,7 +377,7 @@
     <!-- Animation. -->
     <!-- <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
+        <h2 class="title is-3 is-centered">2. RAIL discovers safe successful mode of Imitation Learning policy</h2>
 
         <h3 class="title is-4">Interpolating states</h3>
         <div class="content has-text-justified">
@@ -372,98 +462,6 @@
     <!--/ Concurrent Work. -->
 
   </div>
-</section>
-
-<!-- Maze Example -->
-<!-- Placeholder for maze video carousel -->
-<!-- Fun Idea: can user select initial position, goal? -->
-<section class="section is-light is-small">
-  <!-- <div class="hero-body"> -->
-    <div class="container is-max-desktop">
-      <div class="content mb-5">
-        <h2 class="title is-3 has-text-centered"> #1. RAIL can safely reason in long-horizon</h2>
-        <p>          
-          In this <a href="https://robotics.farama.org/envs/maze/point_maze/"> PointMaze task</a>, the mobile robot must navigate to its goal in a maze while not colliding with walls.
-          We report the key metric, <b>Safe Success Rate</b>—the percentage of successful episodes with no safety violations.
-          RAIL significantly increases safe success rate by combining long-horizon reasoning capability and safety guarantee respectively from diffusion policy and reachability analysis.
-        </p>
-      </div>
-      <!-- Insert table here -->
-      <table class="table is-fullwidth is-striped">
-        <thead>
-          <tr>
-            <th>Method</th>
-            <th>Safe Success Rate</th>
-            <th>Success Rate</th>
-            <th>Collision Rate</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Diffusion Policy</td>
-            <td>15.00%</td>
-            <td><b>100.00%</b></td>
-            <td>5.66%</td>
-          </tr>
-          <tr>
-            <td>Safety-guided Diffusion Policy</td>
-            <td>18.00%</td>
-            <td><b>100.00%</b></td>
-            <td>4.85%</td>
-          </tr>
-          <tr>
-            <td>Model-based Planner</td>
-            <td>49.00%</td>
-            <td>49.00%</td>
-            <td><b>0.00%</b></td>
-          </tr>
-          <tr>
-            <td><b>Diffusion Policy + RAIL (Ours)</b></td>
-            <td><b>95.00%</b></td>
-            <td>95.00%</td>
-            <td><b>0.00%</b></td>
-          </tr>
-        </tbody>
-      </table>
-      <!-- <div class="maze-image-container has-text-centered">
-        <img src="static/images/maze_table.png" alt="Maze 2D Comparison" class="maze-comparison-image">
-      </div> -->
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item">
-          <div class="item-content">
-            <video poster="" id="steve" autoplay controls muted loop playsinline>
-              <source src="./static/videos/maze2D_large_sf.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline>
-            <source src="./static/videos/maze2D_large_diff.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline>
-            <source src="./static/videos/maze2D_large_sd.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline>
-            <source src="./static/videos/maze2D_large_back.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <div class="content mb-5">
-        <p>          
-          If the robot collides with a wall, the screen flashes in <b style = "color:red"> red </b>.
-          For Diffusion Policy + RAIL, a <b style = "color:rgb(90, 135, 21)"> green circle </b> appears when safety intervention happens
-          and <b style = "color: blue"> blue circle </b> when it operates without interventon.
-        </p>
-      </div>
-    </div>
-  <!-- </div> -->
 </section>
 
 <!-- Placeholder for bibliography -->
