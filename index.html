@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+        content="A safety filter framework for Imitation Learning policy using reachability analysis">
+  <meta name="keywords" content="RAIL, IL, SafetyFIlter">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>RAIL: Reachability-Aided Imitation Learning for Safe Policy Execution</title>
 
@@ -181,8 +181,7 @@
       </video>
       <h2 class="subtitle has-text-centered">
         How do we bridge the gap between <em style="color:lightgreen">what robots can do</em> and <em style="color:lightgreen">what they can safely do </em>?
-        We introduce <span class = "dnerf"> RAIL </span>: a safety-filter framework that 
-        combines imitation learning with reachability analysis to ensure safety while maximizing robot capability.
+        We introduce <span class = "dnerf"> RAIL </span>: a safety-filter framework for Imitation Learning (IL) policy leveraging reachability analysis to ensure robot safety.
       </h2>
     </div>
   </div>
@@ -248,8 +247,9 @@
 <!-- Fun Idea: can user select initial position, goal? -->
 <section class="section is-light is-small">
     <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered"> What can RAIL do?</h2>
       <div class="content mb-5">
-        <h2 class="title is-3 has-text-centered"> (1) RAIL can safely reason in long-horizon</h2>
+        <h2 class="title is-4 has-text-centered"> (1) RAIL can safely reason in long-horizon</h2>
         <p>          
           In this <a href="https://robotics.farama.org/envs/maze/point_maze/"> PointMaze task</a>, the mobile robot must navigate to its goal in a maze while not colliding with walls.
           We report the key metric, <b>Safe Success Rate</b>—the percentage of successful episodes with no safety violations.
@@ -326,7 +326,7 @@
         <p>
           <i>
           If the robot collides with a wall, the screen flashes in <b style = "color:red">red</b>.
-          For Diffusion Policy + RAIL, a <b style = "color:rgb(90, 135, 21)">green circle</b> appears when safety intervention happens
+          For <b>Diffusion Policy + RAIL</b>, a <b style = "color:rgb(90, 135, 21)">green circle</b> appears when safety intervention happens
           and <b style = "color: blue">blue circle</b> when it operates without interventon.
           </i>
         </p>
@@ -336,7 +336,7 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">(2) RAIL discovers safe successful mode of IL policy</h2>
+    <h2 class="title is-4 has-text-centered">(2) RAIL can discover safe successful mode of IL policy</h2>
 
     <div class="columns is-centered">
 
