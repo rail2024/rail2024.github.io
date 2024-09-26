@@ -337,21 +337,19 @@
 <section class="section">
   <div class="container is-max-desktop">
     <h2 class="title is-4">(2) RAIL can discover safe successful mode of IL policy</h2>
-    <p>          
+    <p style="margin-bottom: 20px;">          
       In this <a href="https://robosuite.ai/docs/modules/environments.html#pick-and-place"> PickPlace task</a>, the single-arm manipulator must pick the can and place in the target bin.
       Safety means avoiding collisions between the robot and the environment while obeying joint position and velocity constraints. 
       The gripper-can collision is ignored during picking, but collisions between the can and the environment are considered unsafe during placing.
     </p>
-    <p>
-      
-    </p>
+
 
     <div class="columns is-centered">
       <div class="column">
         <div class="content">
-          <h2 class="title is-5">Turning grippeer</h2>
+          <h2 class="title is-5">Turning gripper</h2>
           <p>
-            RAIL adjusts the gripper's orientation to safely pick up the can.
+            RAIL adjusts the orientation of the gripper to descend and safely pick up the can.
           </p>
           <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/turn_gripper.mp4"
