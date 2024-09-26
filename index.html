@@ -395,7 +395,7 @@
     </div>
 
     <div class="item item-fullbody">
-      <video poster="" id="fullbody" autoplay controls muted loop playsinline width = "50%" height = "50%" style="display: block; margin: auto; ; margin-bottom: 20px;">
+      <video poster="" id="fullbody" autoplay controls muted loop playsinline width = "70%" height = "70%" style="display: block; margin: auto; ; margin-bottom: 20px;">
         <source src="./static/videos/franka_sim_cmp.mp4"
                 type="video/mp4">
       </video>
@@ -404,7 +404,7 @@
     <div class="content mb-5">
       <p>
         <i>
-        If the robot collides with a wall, the screen flashes in <b style = "color:red">red</b>.
+        If safety is violated, the screen flashes in <b style = "color:red">red</b>.
         For <b>Diffusion Policy + RAIL</b>, a <b style = "color:rgb(90, 135, 21)">green circle</b> appears when safety intervention happens
         and <b style = "color: blue">blue circle</b> when it operates without interventon.
         </i>
@@ -500,6 +500,12 @@
     </div> -->
     <!--/ Concurrent Work. -->
 
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-4">(3) RAIL can run real-time</h2>
   </div>
 </section>
 
