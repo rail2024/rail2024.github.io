@@ -342,14 +342,16 @@
       Safety means avoiding collisions between the robot and the environment while obeying joint position and velocity constraints. 
       The gripper-can collision is ignored during picking, but collisions between the can and the environment are considered unsafe during placing.
     </p>
+    <p>
+      
+    </p>
 
     <div class="columns is-centered">
       <div class="column">
         <div class="content">
           <h2 class="title is-5">Turning grippeer</h2>
           <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
+            RAIL adjusts the gripper's orientation to safely pick up the can.
           </p>
           <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/turn_gripper.mp4"
@@ -363,11 +365,10 @@
         <div class="columns is-centered">
           <div class="column content">
             <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
+              RAIL repositions the can to avoid collisions between the bin and gripper during pick-up.
             </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/turn_gripper.mp4"
+            <video id="matting-video" controls playsinline autoplay muted loop height="100%">
+              <source src="./static/videos/nonprehensile.mp4"
                       type="video/mp4">
             </video>
           </div>
@@ -379,11 +380,10 @@
         <div class="columns is-centered">
           <div class="column content">
             <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
+              RAIL corrects the placing path to prevent collisions between the can and the cereal box.
             </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/turn_gripper.mp4"
+            <video id="matting-video" controls playsinline autoplay muted loop height="100%">
+              <source src="./static/videos/pathcorrection.mp4"
                       type="video/mp4">
             </video>
           </div>
