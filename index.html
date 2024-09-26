@@ -383,8 +383,9 @@
       <div class="content mb-5">
         <h2 class="title is-3 has-text-centered"> #1. RAIL can safely reason in long-horizon</h2>
         <p>          
-          In this <a href="https://robotics.farama.org/envs/maze/point_maze/"> PointMaze task </a>, the mobile robot must navigate to its goal while avoiding walls.
-          RAIL combines long-horizon reasoning capability and safety guarantee respectively from diffusion policy and reachability analysis.
+          In this <a href="https://robotics.farama.org/envs/maze/point_maze/"> PointMaze task</a>, the mobile robot must navigate to its goal in a maze while not colliding with walls.
+          We report the key metric, <b>Safe Success Rate</b>—the percentage of successful episodes with no safety violations.
+          RAIL significantly increases safe success rate by combining long-horizon reasoning capability and safety guarantee respectively from diffusion policy and reachability analysis.
         </p>
       </div>
       <!-- Insert table here -->
@@ -392,7 +393,7 @@
         <thead>
           <tr>
             <th>Method</th>
-            <th>Success and Safe Rate</th>
+            <th>Safe Success Rate</th>
             <th>Success Rate</th>
             <th>Collision Rate</th>
           </tr>
@@ -401,26 +402,26 @@
           <tr>
             <td>Diffusion Policy</td>
             <td>15.00%</td>
-            <td>100.00%</td>
+            <td><b>100.00%</b></td>
             <td>5.66%</td>
           </tr>
           <tr>
             <td>Safety-guided Diffusion Policy</td>
             <td>18.00%</td>
-            <td>100.00%</td>
+            <td><b>100.00%</b></td>
             <td>4.85%</td>
           </tr>
           <tr>
             <td>Model-based Planner</td>
             <td>49.00%</td>
             <td>49.00%</td>
-            <td>0.00%</td>
+            <td><b>0.00%</b></td>
           </tr>
           <tr>
-            <td><b>Diffusion Policy + RAIL</b></td>
+            <td><b>Diffusion Policy + RAIL (Ours)</b></td>
+            <td><b>95.00%</b></td>
             <td>95.00%</td>
-            <td>95.00%</td>
-            <td>0.00%</td>
+            <td><b>0.00%</b></td>
           </tr>
         </tbody>
       </table>
