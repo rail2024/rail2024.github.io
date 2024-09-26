@@ -32,7 +32,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+  <link rel="icon" href="./static/images/rail.svg">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -343,14 +343,10 @@
       The gripper-can collision is ignored during picking, but collisions between the can and the environment are considered unsafe during placing.
     </p>
     
-    RAIL increases Safe Success Rate by <b>9.25%</b> over Diffusion Policy and <b>2.00%</b> over Action Chunking Transformer, by finding safe, successful IL policy modes.
-
-    <div class="item item-fullbody">
-      <video poster="" id="fullbody" autoplay controls muted loop playsinline width = "50%" height = "50%" style="display: block; margin: auto; ; margin-bottom: 20px;">
-        <source src="./static/videos/franka_sim_comp.mp4"
-                type="video/mp4">
-      </video>
-    </div>
+    <p style="margin-bottom: 20px;">
+    RAIL increases Safe Success Rate by <b>9.25%</b> over <a href="https://github.com/real-stanford/diffusion_policy">Diffusion Policy</a> and <b>2.00%</b> over <a href="https://github.com/Shaka-Labs/ACT">Action Chunking Transformer</a>, by finding safe, successful IL policy modes.
+    We illustrate some notable behaviors of RAIL:
+    </p>
 
     <div class="columns is-centered">
       <div class="column">
@@ -398,6 +394,12 @@
       </div>
     </div>
 
+    <div class="item item-fullbody">
+      <video poster="" id="fullbody" autoplay controls muted loop playsinline width = "50%" height = "50%" style="display: block; margin: auto; ; margin-bottom: 20px;">
+        <source src="./static/videos/franka_sim_compare.mp4"
+                type="video/mp4">
+      </video>
+    </div>
 
     <!--/ Matting. -->
 
@@ -492,17 +494,17 @@
 </section>
 
 <!-- Placeholder for bibliography -->
-<!-- <section class="section" id="BibTeX">
+<section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+    <pre><code>@article{jung2024rail,
+  author    = {Jung, Wonsuhk and Anthony, Dennis and Mishra, Utkarsh and Arachchige, Nadun and Bronars, Matthew, and Xu, Danfei and Kousik, Shreyas},
+  title     = {RAIL: Reachability-Aided Imitation Learning for Safe Policy Execution},
+  journal   = {arxiv},
+  year      = {2024},
 }</code></pre>
   </div>
-</section> -->
+</section>
 
 
 <footer class="footer">
