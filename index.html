@@ -109,12 +109,12 @@
               <a href="https://www.shreyaskousik.com/">Shreyas Kousik*</a><sup>1</sup>,
           </div>
 
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Georgia Institute of Technology,</span>
+          <div class="is-size-6 publication-authors">
+            <span class="author-block"><sup>1</sup>Georgia Institute of Technology</span>
           </div>
 
           <div class="is-size-8 publication-authors">
-            <span class="author-block"><sup></sup>* indicates equal contribution,</span>
+            <span class="author-block"><sup></sup>* Co-advising authorship,</span>
           </div>
 
           <div class="column has-text-centered">
@@ -142,12 +142,12 @@
               
               <!-- Video Link. -->
               <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                   class="external-link button is-normal is-rounded is-dark preparation-link">
+                <a href="https://www.youtube.com/watch?v=1n6ZLEODWE4"
+                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
                   </span>
-                  <span>Video (Coming Soon)</span>
+                  <span>Video</span>
                 </a>
               </span>
 
@@ -176,11 +176,11 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video id="teaser" class="is-centered" autoplay muted loop playsinline width="65%" height="65%" style="display: block; margin: auto; ; margin-bottom: 20px;">
-        <source src="./static/videos/rail_teaser.mp4"
+        <source src="./static/videos/rail_teaser_speed.mp4"
                 type="video/mp4">
       </video>
       <h2 class="subtitle">
-        How do we bridge the gap between <em style="color:lightgreen">what robots can do</em> and <em style="color:lightgreen">what they can safely do </em>?
+        How do we bridge the gap between <em style="color:rgb(92, 152, 92)">what robots can do</em> and <em style="color:rgb(92, 152, 92)">what they can safely do </em>?
         We introduce <span class = "dnerf"> RAIL </span>: a safety-filter framework for Imitation Learning (IL) policy leveraging reachability analysis to ensure robot safety while maximizing robot capability.
       </h2>
     </div>
@@ -255,7 +255,7 @@
         </p>
         <p>
           We report the key metric, <b>Safe Success Rate</b>—the percentage of successful episodes with no safety violations, out of 100 experiments.
-          RAIL significantly increases safe success rate by combining long-horizon reasoning capability and safety guarantee respectively from diffusion policy and reachability analysis.
+          RAIL significantly increases safe success rate by combining long-horizon reasoning capability and safety guarantee respectively from IL policy and reachability analysis.
         </p>
       </div>
       <!-- Insert table here -->
@@ -328,6 +328,7 @@
           If the robot collides with a wall, the screen flashes in <b style = "color:red">red</b>.
           For <b>Diffusion Policy + RAIL</b>, a <b style = "color:rgb(90, 135, 21)">green circle</b> appears when safety intervention happens
           and <b style = "color: blue">blue circle</b> when it operates without interventon.
+          Video speed: 1x
           </i>
         </p>
       </div>
@@ -407,6 +408,7 @@
         If safety is violated, the screen flashes in <b style = "color:red">red</b>.
         For <b>Diffusion Policy + RAIL</b>, a <b style = "color:rgb(90, 135, 21)">green circle</b> appears when safety intervention happens
         and <b style = "color: blue">blue circle</b> when it operates without interventon.
+        Video speed: (Left) 5x (Right) 2.5x when notable behaviors are observed, 10x otherwise
         </i>
       </p>
     </div>
@@ -506,6 +508,7 @@
 <section class="section">
   <div class="container is-max-desktop">
     <h2 class="title is-4">(3) RAIL can run real-time</h2>
+    <p> On hardware, RAIL is able to verify safety and compute the plan in average 0.42 seconds.</p>
   </div>
 </section>
 
