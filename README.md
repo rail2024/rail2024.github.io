@@ -1,6 +1,6 @@
 # RAIL
 
-This is the repository that contains source code for the [RAIL website](https://projrail.github.io/). 
+This is the repository that contains source code for the [RAIL website](https://rail2024.github.io/). 
 
 If you find RAIL useful for your work, please cite:
 ```
