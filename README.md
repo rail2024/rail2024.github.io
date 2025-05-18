@@ -4,11 +4,12 @@ This is the repository that contains source code for the [RAIL website](https://
 
 If you find RAIL useful for your work, please cite:
 ```
-@article{jung2024rail
+@article{jung2025rail,
   author    = {Jung, Wonsuhk and Anthony, Dennis and Mishra, Utkarsh and Arachchige, Nadun and Bronars, Matthew, and Xu, Danfei and Kousik, Shreyas},
-  title     = {RAIL: Reachability-Aided Imitation Learning for Safe Policy Execution,
-  journal   = {arXiv preprint arXiv:2409.19190},
-  year      = {2024},
+  title     = {RAIL: Reachability-Aided Imitation Learning for Safe Policy Execution},
+  booktitle = {2025 IEEE International Conference on Robotics and Automation (ICRA)},
+  year      = {2025},
+  organization = {IEEE}
 }
 ```
 
